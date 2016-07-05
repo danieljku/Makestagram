@@ -12,6 +12,9 @@
 		123247151D21A27500779195 /* FriendSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123247141D21A27500779195 /* FriendSearchViewController.swift */; };
 		123247171D21A5D300779195 /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123247161D21A5D300779195 /* TimeLineViewController.swift */; };
 		123247201D21A78C00779195 /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1232471F1D21A78C00779195 /* PhotoTakingHelper.swift */; };
+		1270C8E21D2709E100D1B991 /* FriendSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1270C8E11D2709E100D1B991 /* FriendSearchTableViewCell.swift */; };
+		12D1D6121D22EC880061F0A0 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D1D6111D22EC880061F0A0 /* PostTableViewCell.swift */; };
+		12D1D6141D22F1A90061F0A0 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D1D6131D22F1A90061F0A0 /* ParseHelper.swift */; };
 		153FDE291DD063FD1A929703 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837E8DB1140E3C18464FF6A5 /* Pods_Makestagram.framework */; };
 		62551B961B06C2F5000913E4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B951B06C2F5000913E4 /* Social.framework */; };
 		62551B981B06C2FD000913E4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62551B971B06C2FD000913E4 /* Accounts.framework */; };
@@ -69,6 +72,9 @@
 		123247141D21A27500779195 /* FriendSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchViewController.swift; sourceTree = "<group>"; };
 		123247161D21A5D300779195 /* TimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 		1232471F1D21A78C00779195 /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
+		1270C8E11D2709E100D1B991 /* FriendSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchTableViewCell.swift; sourceTree = "<group>"; };
+		12D1D6111D22EC880061F0A0 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		12D1D6131D22F1A90061F0A0 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
 		2E1AE507EDD2D18E4D8E4173 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		55F6341D28BC6FA59D96FF03 /* Pods_MakestagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakestagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E64CFB4FFF5E1AB89804651 /* Pods-MakestagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakestagramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MakestagramTests/Pods-MakestagramTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +156,31 @@
 			path = PhotoTaking;
 			sourceTree = "<group>";
 		};
+		12A66C0C1D2707B70014F276 /* Friend Search */ = {
+			isa = PBXGroup;
+			children = (
+				1270C8E11D2709E100D1B991 /* FriendSearchTableViewCell.swift */,
+			);
+			path = "Friend Search";
+			sourceTree = "<group>";
+		};
+		12D1D60D1D22EC550061F0A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12A66C0C1D2707B70014F276 /* Friend Search */,
+				12D1D60E1D22EC550061F0A0 /* Timeline */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12D1D60E1D22EC550061F0A0 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				12D1D6111D22EC880061F0A0 /* PostTableViewCell.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
 		62551B621B06BF33000913E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +238,7 @@
 			children = (
 				6277189D1B0A58E800AF5C6E /* ErrorHandling.swift */,
 				6277189E1B0A58E800AF5C6E /* ParseLoginHelper.swift */,
+				12D1D6131D22F1A90061F0A0 /* ParseHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -234,6 +266,7 @@
 		62C8C1E21B06BD6500DC3EA7 /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
+				12D1D60D1D22EC550061F0A0 /* Views */,
 				121DDC2C1D21CACE006B3490 /* Models */,
 				1232471E1D21A75B00779195 /* PhotoTaking */,
 				6277189C1B0A58E800AF5C6E /* Helpers */,
@@ -501,8 +534,11 @@
 				123247131D21A26200779195 /* PhotoViewController.swift in Sources */,
 				123247201D21A78C00779195 /* PhotoTakingHelper.swift in Sources */,
 				62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */,
+				1270C8E21D2709E100D1B991 /* FriendSearchTableViewCell.swift in Sources */,
 				627718971B0A581700AF5C6E /* FilterViewController.swift in Sources */,
 				123247171D21A5D300779195 /* TimeLineViewController.swift in Sources */,
+				12D1D6141D22F1A90061F0A0 /* ParseHelper.swift in Sources */,
+				12D1D6121D22EC880061F0A0 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
